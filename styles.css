@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Hero Section (Header) */
+  .hero {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 4em;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .hero .cta-button {
+    background-color: #ff5c5c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .cta-button:hover {
+    background-color: #ff2c2c;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Destinations Cards Section */
+  .destination-cards {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .destination-cards h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .city-card {
+    width: 280px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .city-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 1.4em;
+  }
+  
+  .card-content p {
+    margin: 5px 0 0;
+    font-size: 1em;
+  }
+  
+  /* Quote Section */
+  .quote-section {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .quote-section blockquote {
+    font-size: 1.5em;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .quote-section span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .card-grid {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .hero h1 {
+      font-size: 3em;
+    }
+  
+    .hero p {
+      font-size: 1.2em;
+    }
+  
+    .hero .cta-button {
+      font-size: 0.9em;
+    }
+  
+    .about h2 {
+      font-size: 2em;
+    }
+  
+    .destination-cards h2 {
+      font-size: 2em;
+    }
+  }
+  
